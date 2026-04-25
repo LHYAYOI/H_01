@@ -38,20 +38,20 @@ public class Spawner : MonoBehaviour
         spawnPosition.y += Random.Range(spawnMinRangeZ, spawnMaxRangeZ); // Y軸にランダムなオフセットを追加
 
         Vector2 enemyMoveVector;    // 敵の移動方向ベクトル
-        if(spawnPosition.x > transform.position.x)
+        if(spawnPosition.x < 0f)
         {
-            enemyMoveVector = Vector2.left; // 右から生成された場合は左に移動
+            enemyMoveVector = Vector2.left; // 左から生成された場合は右に移動
         }
         else
         {
-            enemyMoveVector = Vector2.right; // 左から生成された場合は右に移動
+            enemyMoveVector = Vector2.right; // 右から生成された場合は左に移動
         }
 
         //エネミーの生成
         var enemy = Instantiate(enemyPrefab, spawnPosition, Quaternion.identity); // プレハブを生成
         
         //エネミーの移動方向を設定
-        
+        enemy.GetComponent<EnemyBase>().SetMoveVector(enemyMoveVector);
 
     }
 }

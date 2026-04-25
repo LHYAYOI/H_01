@@ -11,7 +11,7 @@
       "RelativeMoniker": "D:0:0:{72EAF828-1A61-6C67-944C-0D340AB7C738}|Assembly-CSharp.csproj|solutionrelative:assets\\hamadaruisu\\script\\birdenemyscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{72EAF828-1A61-6C67-944C-0D340AB7C738}|Assembly-CSharp.csproj|c:\\github\\h_01\\h_01\\assets\\hamadaruisu\\script\\enemybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{72EAF828-1A61-6C67-944C-0D340AB7C738}|Assembly-CSharp.csproj|C:\\GitHub\\H_01\\H_01\\assets\\hamadaruisu\\script\\enemybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{72EAF828-1A61-6C67-944C-0D340AB7C738}|Assembly-CSharp.csproj|solutionrelative:assets\\hamadaruisu\\script\\enemybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -32,7 +32,7 @@
               "RelativeDocumentMoniker": "Assets\\HamadaRuisu\\Script\\EnemyBase.cs",
               "ToolTip": "C:\\GitHub\\H_01\\H_01\\Assets\\HamadaRuisu\\Script\\EnemyBase.cs",
               "RelativeToolTip": "Assets\\HamadaRuisu\\Script\\EnemyBase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-25T03:39:14.773Z",
               "EditorCaption": ""
@@ -45,7 +45,7 @@
               "RelativeDocumentMoniker": "Assets\\HamadaRuisu\\Script\\CharacterController.cs",
               "ToolTip": "C:\\GitHub\\H_01\\H_01\\Assets\\HamadaRuisu\\Script\\CharacterController.cs",
               "RelativeToolTip": "Assets\\HamadaRuisu\\Script\\CharacterController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACEAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-25T03:36:43.642Z",
               "EditorCaption": ""
@@ -58,7 +58,7 @@
               "RelativeDocumentMoniker": "Assets\\HamadaRuisu\\Script\\BirdEnemyScript.cs",
               "ToolTip": "C:\\GitHub\\H_01\\H_01\\Assets\\HamadaRuisu\\Script\\BirdEnemyScript.cs",
               "RelativeToolTip": "Assets\\HamadaRuisu\\Script\\BirdEnemyScript.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-25T02:56:35.67Z",
               "EditorCaption": ""

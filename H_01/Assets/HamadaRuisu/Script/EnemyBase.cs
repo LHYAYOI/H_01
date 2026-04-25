@@ -6,6 +6,13 @@ public class EnemyBase : MonoBehaviour
 
     [SerializeField] protected List<GameObject> m_characterList;
 
+    protected Vector2 m_moveVector;
+
+    public void SetMoveVector(Vector2 moveVector) 
+    {
+        m_moveVector = moveVector;
+    }
+
     public void ReleaseCharacter(GameObject character)
     {
         if (m_characterList.Contains(character))

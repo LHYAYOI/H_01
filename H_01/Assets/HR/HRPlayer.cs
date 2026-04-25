@@ -83,15 +83,16 @@ public class HRPlayer : MonoBehaviour
 
             if (kan != null)
             {
-                //Vector2 direction = kan.transform.position - transform.position;
+                var distance = (kan.transform.position - transform.position).magnitude;
 
                 float x = Random.Range(-1, 1);
 
                 Vector2 direction = new Vector2(x, 1);
 
-                if (direction.magnitude <= attackRange)
+                if (distance <= attackRange)
                 {
                     m_scoreUI.AddScore(1000);
+
                     direction = direction.normalized;
                     direction.x *= attackHoriScale;
                     kanrb.AddForce(direction.normalized * attackPower, ForceMode2D.Impulse);

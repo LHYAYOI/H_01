@@ -462,12 +462,20 @@ PrefabInstance:
       value: ScoreCanvas
       objectReference: {fileID: 0}
     - target: {fileID: 3993978018210638552, guid: 9dbe76ffa3ee37e49a2ef3253ee7b501, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 503.8236
+      objectReference: {fileID: 0}
+    - target: {fileID: 3993978018210638552, guid: 9dbe76ffa3ee37e49a2ef3253ee7b501, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 38.8324
+      objectReference: {fileID: 0}
+    - target: {fileID: 3993978018210638552, guid: 9dbe76ffa3ee37e49a2ef3253ee7b501, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 78
+      value: 186.9068
       objectReference: {fileID: 0}
     - target: {fileID: 3993978018210638552, guid: 9dbe76ffa3ee37e49a2ef3253ee7b501, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -32
+      value: -29.998
       objectReference: {fileID: 0}
     - target: {fileID: 4500328671098235022, guid: 9dbe76ffa3ee37e49a2ef3253ee7b501, type: 3}
       propertyPath: m_frame

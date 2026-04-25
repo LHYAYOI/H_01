@@ -2,11 +2,6 @@ using UnityEngine;
 
 public class GroundGameOver : MonoBehaviour
 {
-    [SerializeField] GameObject kan = null;
-    [SerializeField] Rigidbody2D kanrb = null;
-
-    [SerializeField] GameObject gameOverUI = null;
-
 
     void Start()
     {
@@ -15,10 +10,10 @@ public class GroundGameOver : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject == kan)
+        if (collision.gameObject.CompareTag("Kan"))
         {
-            gameOverUI.SetActive(true);
-            Debug.Log("ゲームオーバー");
+            Debug.Log("kan hit");
+            Destroy(collision.gameObject);
         }
     }
 }

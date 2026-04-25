@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8343401828743742513}
   m_Layer: 7
   m_Name: FrogEnemy
-  m_TagString: Untagged
+  m_TagString: Frog
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -210,11 +210,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6585257079899056749, guid: 02efb8f511ad96d40a6158d8b2752c8d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.790001
+      value: -1.03
       objectReference: {fileID: 0}
     - target: {fileID: 6585257079899056749, guid: 02efb8f511ad96d40a6158d8b2752c8d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.73989
+      value: 1.45
       objectReference: {fileID: 0}
     - target: {fileID: 6585257079899056749, guid: 02efb8f511ad96d40a6158d8b2752c8d, type: 3}
       propertyPath: m_LocalPosition.z

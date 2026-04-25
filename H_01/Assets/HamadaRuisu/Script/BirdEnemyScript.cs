@@ -15,17 +15,7 @@ public class BirdEnemyScript : EnemyBase
 
     void Update()
     {
-        MoveRight();
-
-        if (Input.GetKeyDown(KeyCode.I)) 
-        {
-            ReleaseCharacter(m_characterList[0]);
-        }
-
-        if (Input.GetKey(KeyCode.O)) 
-        {
-            transform.Rotate(0, 0, 1);
-        }
+        Move();
     }
 
     public void SetSpeed(float speed) 
@@ -33,7 +23,7 @@ public class BirdEnemyScript : EnemyBase
         m_speed = speed;
     }
 
-    private void MoveRight() 
+    private void Move() 
     {
         transform.Translate(m_moveVector * m_speed * Time.deltaTime);
     }

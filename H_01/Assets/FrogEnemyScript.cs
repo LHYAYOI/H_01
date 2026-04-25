@@ -15,8 +15,6 @@ public class FrogEnemyScript : EnemyBase
     {
         rb = GetComponent<Rigidbody2D>();
         jumpTimer = jumpInterval;
-
-        m_moveVector = Vector2.right;
     }
 
     void Update()
@@ -48,13 +46,20 @@ public class FrogEnemyScript : EnemyBase
                 Jump();
             }
         }
+
+        //îÕàÕäOåæÇ¡ÇΩÇÁéÄÇ 
+
+        if (transform.position.x < -11 || transform.position.x > 11) 
+        {
+            Destroy(this.gameObject);
+        }
     }
 
     void Jump()
     {
         rb.gravityScale = 1; // èdóÕÇñﬂÇ∑
 
-        float xDir = m_moveVector.x;
+        float xDir = -m_moveVector.x;
         Vector2 force = new Vector2(xDir, 1f) * jumpForce;
 
         rb.AddForce(force, ForceMode2D.Impulse);

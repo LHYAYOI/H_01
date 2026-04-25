@@ -8,6 +8,8 @@ public class EnemyBase : MonoBehaviour
 
     protected Vector2 m_moveVector;
 
+    ScoreUI m_scoreUI;
+
     public void SetMoveVector(Vector2 moveVector) 
     {
         m_moveVector = moveVector;
@@ -19,17 +21,11 @@ public class EnemyBase : MonoBehaviour
         {
             m_characterList.Remove(character);
 
-            //スタティックじゃなくする
-            Rigidbody2D rigidbody2D = character.GetComponent<Rigidbody2D>();
+            m_scoreUI = GameObject.Find("Text (TMP)").GetComponent<ScoreUI>();
 
-            rigidbody2D.bodyType = RigidbodyType2D.Dynamic;
+            m_scoreUI.AddScore(2000);
 
-            float randomX = Random.Range(-1f, 1f);
-
-            rigidbody2D.AddForce(new Vector2(randomX, 1) * 10, ForceMode2D.Impulse);
-
-            //親オブジェクトから切り離す
-            character.transform.parent = null;
+            Destroy(character);
         }
     }
 }

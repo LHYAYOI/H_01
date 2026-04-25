@@ -33,6 +33,10 @@ public class WindEnemy : EnemyBase
     // Update is called once per frame
     void Update()
     {
+        if (transform.position.x < -11 || transform.position.x > 11)
+        {
+            Destroy(this.gameObject);
+        }
     }
 
     void FixedUpdate()

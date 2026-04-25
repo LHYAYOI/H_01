@@ -43,6 +43,8 @@ public class CharacterController : MonoBehaviour
 
                 m_enemyBase.ReleaseCharacter(this.gameObject);
 
+                other.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 1) * 10, ForceMode2D.Impulse);
+
                 m_state = STATE.SEPARATED;
             }
         }

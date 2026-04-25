@@ -3,6 +3,8 @@ using System.Collections;
 
 public class HRPlayer : MonoBehaviour
 {
+    [SerializeField] ScoreUI m_scoreUI;
+
     [SerializeField]
     float speed = 5f;
     [SerializeField]
@@ -81,9 +83,15 @@ public class HRPlayer : MonoBehaviour
 
             if (kan != null)
             {
-                Vector2 direction = kan.transform.position - transform.position;
+                //Vector2 direction = kan.transform.position - transform.position;
+
+                float x = Random.Range(-1, 1);
+
+                Vector2 direction = new Vector2(x, 1);
+
                 if (direction.magnitude <= attackRange)
                 {
+                    m_scoreUI.AddScore(1000);
                     direction = direction.normalized;
                     direction.x *= attackHoriScale;
                     kanrb.AddForce(direction.normalized * attackPower, ForceMode2D.Impulse);

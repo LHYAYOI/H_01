@@ -21,11 +21,15 @@ public class ScoreUI : MonoBehaviour
         m_scoreImage.color = color;
         m_text.color = color;
 
-        m_text.text = m_score.ToString("0000000000000");
+        m_text.text = GManager.instance.score.ToString("0000000000000");
+
+       
     }
 
     public void AddScore(int num)
     {
         m_score += num;
+
+        GManager.instance.score = m_score;
     }
 }

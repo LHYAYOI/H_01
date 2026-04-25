@@ -9,7 +9,13 @@ public class Spawner : MonoBehaviour
     public float spawnInterval = 2f; // 敵を生成する間隔
 
     private float timer; // タイマー
-    
+
+    [SerializeField] int spawnAmount;
+
+    [SerializeField] string tagname;
+
+    GameObject[] tagObjects;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -19,16 +25,22 @@ public class Spawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Spawn(tagname);
+    }
+
+    void Spawn(string tagname) 
+    {
+        tagObjects = GameObject.FindGameObjectsWithTag(tagname);
+
         // タイマーを更新
         timer += Time.deltaTime;
 
         // タイマーが生成間隔を超えたら敵を生成
-        if (timer >= spawnInterval)
+        if (timer >= spawnInterval && tagObjects.Length < spawnAmount) 
         {
             SpawnEnemy(); // 敵を生成する関数を呼び出す
             timer = 0f; // タイマーをリセット
         }
-
     }
 
     void SpawnEnemy()
@@ -38,20 +50,20 @@ public class Spawner : MonoBehaviour
         spawnPosition.y += Random.Range(spawnMinRangeZ, spawnMaxRangeZ); // Y軸にランダムなオフセットを追加
 
         Vector2 enemyMoveVector;    // 敵の移動方向ベクトル
-        if(spawnPosition.x > transform.position.x)
+        if(spawnPosition.x < 0)
         {
-            enemyMoveVector = Vector2.left; // 右から生成された場合は左に移動
+            enemyMoveVector = Vector2.right; // 左から生成された場合は右に移動   
         }
         else
         {
-            enemyMoveVector = Vector2.right; // 左から生成された場合は右に移動
+            enemyMoveVector = Vector2.left; // 右から生成された場合は左に移動
         }
 
         //エネミーの生成
         var enemy = Instantiate(enemyPrefab, spawnPosition, Quaternion.identity); // プレハブを生成
-        
+
         //エネミーの移動方向を設定
-        
+        enemy.GetComponent<EnemyBase>().SetMoveVector(enemyMoveVector);
 
     }
 }

@@ -54,6 +54,11 @@ public class CloudEnemy : EnemyBase
         {
             rainSummonTimer += Time.deltaTime;
         }
+
+        if (transform.position.x < -11 || transform.position.x > 11)
+        {
+            Destroy(this.gameObject);
+        }
     }
 
     void FixedUpdate()

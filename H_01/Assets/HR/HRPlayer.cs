@@ -10,6 +10,11 @@ public class HRPlayer : MonoBehaviour
     [SerializeField]
     float attackRange = 1f;
 
+    [SerializeField]
+    float slowScale = 0.5f;
+    [SerializeField]
+    float slowTime = 0f;
+
     Rigidbody2D rb;
 
     GameObject kan = null;
@@ -47,7 +52,7 @@ public class HRPlayer : MonoBehaviour
         {
             vec.x += 1;
         }
-        vec = vec.normalized * speed;
+        vec = vec.normalized * speed * (slowTime > 0 ? slowScale : 1f);
         rb.AddForce(vec);
 
 
@@ -64,5 +69,15 @@ public class HRPlayer : MonoBehaviour
                 }
             }
         }
+
+        if(slowTime > 0)
+        {
+            slowTime -= Time.deltaTime;
+        }
+    }
+
+    public void SetSlow(float time)
+    {
+        slowTime = time;
     }
 }

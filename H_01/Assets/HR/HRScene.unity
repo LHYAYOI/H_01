@@ -584,7 +584,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e907b7ed6f88b94eaa672e530b1af67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HRPlayer
-  speed: 5
+  speed: 10
   attackPower: 10
   attackRange: 1
 --- !u!50 &954482801
@@ -600,7 +600,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDamping: 0
+  m_LinearDamping: 10
   m_AngularDamping: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 0}

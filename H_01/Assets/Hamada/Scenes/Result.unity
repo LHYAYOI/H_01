@@ -153,7 +153,7 @@ RectTransform:
   - {fileID: 1685217221}
   - {fileID: 1203033270}
   - {fileID: 1527219697}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 352367300}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -313,7 +313,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 62746304}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &352367301
@@ -466,14 +467,14 @@ RectTransform:
   m_GameObject: {fileID: 873660145}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.25755, y: 0.25755, z: 0.25755}
+  m_LocalScale: {x: 0.09579032, y: 0.09579032, z: 0.09579032}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1527219697}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.00000667572}
+  m_AnchoredPosition: {x: -0.000015258789, y: -0.00000667572}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &873660147
@@ -498,18 +499,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 128
+    m_FontSize: 300
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
-    m_MaxSize: 128
+    m_MaxSize: 300
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: End
+  m_Text: "\u30BF\u30A4\u30C8\u30EB"
 --- !u!222 &873660148
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -545,7 +546,7 @@ RectTransform:
   m_GameObject: {fileID: 1134865532}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.25755, y: 0.25755, z: 0.25755}
+  m_LocalScale: {x: 0.10433731, y: 0.10433731, z: 0.10433731}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1203033270}
@@ -577,18 +578,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 128
+    m_FontSize: 300
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
-    m_MaxSize: 128
+    m_MaxSize: 300
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Start
+  m_Text: "\u3082\u3046\u4E00\u5EA6"
 --- !u!222 &1134865535
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -611,7 +612,7 @@ GameObject:
   - component: {fileID: 1203033271}
   - component: {fileID: 1203033274}
   m_Layer: 5
-  m_Name: StartButton
+  m_Name: AgainButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -757,7 +758,7 @@ GameObject:
   - component: {fileID: 1527219698}
   - component: {fileID: 1527219701}
   m_Layer: 5
-  m_Name: EndButton
+  m_Name: TitleButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -829,14 +830,14 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1527219701}
         m_TargetAssemblyTypeName: SceneTransition, Assembly-CSharp
-        m_MethodName: End
-        m_Mode: 1
+        m_MethodName: LoadSceneByName
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Title
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1527219699
@@ -923,7 +924,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -336, y: 466}
+  m_AnchoredPosition: {x: -495, y: 466}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1685217222
@@ -959,7 +960,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\u304B\u8E74\u308B"
+  m_Text: "\u30EA\u30B6\u30EB\u30C8"
 --- !u!222 &1685217223
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -973,5 +974,4 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 352367300}
-  - {fileID: 62746304}
   - {fileID: 368196812}

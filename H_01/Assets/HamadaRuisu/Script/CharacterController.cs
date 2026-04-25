@@ -16,7 +16,14 @@ public class CharacterController : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        m_enemyBase = transform.parent.GetComponent<EnemyBase>();
+        Transform parent = transform.parent;
+
+        if (parent == null) 
+        {
+            return;
+        }
+
+        m_enemyBase = parent.GetComponent<EnemyBase>();
     }
 
     // Update is called once per frame
@@ -27,12 +34,13 @@ public class CharacterController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-
         if (m_state == STATE.UNSEPARETED) 
         {
             //é©ï™Ç∆ìØÇ∂ï∂éöÇ»ÇÁÉäÉäÅ[ÉX
-            if (other.gameObject.layer == gameObject.layer)
+            if (other.gameObject.layer == this.gameObject.layer)
             {
+                Debug.Log("koko");
+
                 m_enemyBase.ReleaseCharacter(this.gameObject);
 
                 m_state = STATE.SEPARATED;

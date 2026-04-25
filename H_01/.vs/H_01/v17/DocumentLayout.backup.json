@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\GitHub\\H_01\\H_01\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{72EAF828-1A61-6C67-944C-0D340AB7C738}|Assembly-CSharp.csproj|c:\\github\\h_01\\h_01\\assets\\hamadaruisu\\script\\charactercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72EAF828-1A61-6C67-944C-0D340AB7C738}|Assembly-CSharp.csproj|solutionrelative:assets\\hamadaruisu\\script\\charactercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72EAF828-1A61-6C67-944C-0D340AB7C738}|Assembly-CSharp.csproj|C:\\GitHub\\H_01\\H_01\\assets\\hamadaruisu\\script\\birdenemyscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72EAF828-1A61-6C67-944C-0D340AB7C738}|Assembly-CSharp.csproj|solutionrelative:assets\\hamadaruisu\\script\\birdenemyscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72EAF828-1A61-6C67-944C-0D340AB7C738}|Assembly-CSharp.csproj|c:\\github\\h_01\\h_01\\assets\\hamadaruisu\\script\\enemybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72EAF828-1A61-6C67-944C-0D340AB7C738}|Assembly-CSharp.csproj|solutionrelative:assets\\hamadaruisu\\script\\enemybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EnemyBase.cs",
+              "DocumentMoniker": "C:\\GitHub\\H_01\\H_01\\Assets\\HamadaRuisu\\Script\\EnemyBase.cs",
+              "RelativeDocumentMoniker": "Assets\\HamadaRuisu\\Script\\EnemyBase.cs",
+              "ToolTip": "C:\\GitHub\\H_01\\H_01\\Assets\\HamadaRuisu\\Script\\EnemyBase.cs",
+              "RelativeToolTip": "Assets\\HamadaRuisu\\Script\\EnemyBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T03:39:14.773Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CharacterController.cs",
+              "DocumentMoniker": "C:\\GitHub\\H_01\\H_01\\Assets\\HamadaRuisu\\Script\\CharacterController.cs",
+              "RelativeDocumentMoniker": "Assets\\HamadaRuisu\\Script\\CharacterController.cs",
+              "ToolTip": "C:\\GitHub\\H_01\\H_01\\Assets\\HamadaRuisu\\Script\\CharacterController.cs",
+              "RelativeToolTip": "Assets\\HamadaRuisu\\Script\\CharacterController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T03:36:43.642Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BirdEnemyScript.cs",
+              "DocumentMoniker": "C:\\GitHub\\H_01\\H_01\\Assets\\HamadaRuisu\\Script\\BirdEnemyScript.cs",
+              "RelativeDocumentMoniker": "Assets\\HamadaRuisu\\Script\\BirdEnemyScript.cs",
+              "ToolTip": "C:\\GitHub\\H_01\\H_01\\Assets\\HamadaRuisu\\Script\\BirdEnemyScript.cs",
+              "RelativeToolTip": "Assets\\HamadaRuisu\\Script\\BirdEnemyScript.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T02:56:35.67Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

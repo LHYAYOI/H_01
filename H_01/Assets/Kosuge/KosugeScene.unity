@@ -248,7 +248,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
@@ -279,7 +279,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -571,7 +571,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScoreUI
   m_text: {fileID: 675037422}
   m_score: 1000
-  a: 
+  m_frame: {fileID: 1562989846}
+  m_scoreImage: {fileID: 1662766316}
 --- !u!1 &910395691
 GameObject:
   m_ObjectHideFlags: 0
@@ -819,6 +820,8 @@ MonoBehaviour:
   speed: 5
   attackPower: 10
   attackRange: 1
+  slowScale: 0.5
+  slowTime: 0
 --- !u!50 &954482801
 Rigidbody2D:
   serializedVersion: 5

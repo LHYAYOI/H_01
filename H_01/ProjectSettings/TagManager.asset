@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 3
   tags:
   - Kan
+  - Ground
+  - EnemyCore
   layers:
   - Default
   - TransparentFX
@@ -12,13 +14,13 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - ka
+  - EnemyCore
+  - e
+  - ru
+  - ra
+  - su
+  - Ground
   - 
   - 
   - 

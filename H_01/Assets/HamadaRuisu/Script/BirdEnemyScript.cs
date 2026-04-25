@@ -35,7 +35,7 @@ public class BirdEnemyScript : EnemyBase
 
     private void MoveRight() 
     {
-        transform.Translate(-Vector3.right * m_speed * Time.deltaTime);
+        transform.Translate(m_moveVector * m_speed * Time.deltaTime);
     }
     
 }

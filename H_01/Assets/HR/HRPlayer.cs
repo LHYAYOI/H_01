@@ -9,16 +9,22 @@ public class HRPlayer : MonoBehaviour
     float attackPower = 10f;
     [SerializeField]
     float attackRange = 1f;
+    [SerializeField]
+    float attackHoriScale = 1f;
 
     [SerializeField]
     float slowScale = 0.5f;
     [SerializeField]
-    float slowTime = 0f;
+    float slowTime = 0.2f;
+    [SerializeField]
+    float _slowTime = 0f;
 
     Rigidbody2D rb;
 
     GameObject kan = null;
     Rigidbody2D kanrb = null;
+
+    bool isAttacking = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -34,6 +40,20 @@ public class HRPlayer : MonoBehaviour
 
     // Update is called once per frame
     void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space)
+            || Input.GetMouseButtonDown(0))
+        {
+            isAttacking = true;
+        }
+
+        if (_slowTime > 0)
+        {
+            _slowTime -= Time.deltaTime;
+        }
+    }
+
+    private void FixedUpdate()
     {
         Vector2 vec = new Vector2(0, 0);
         if (Input.GetKey(KeyCode.W))
@@ -52,32 +72,34 @@ public class HRPlayer : MonoBehaviour
         {
             vec.x += 1;
         }
-        vec = vec.normalized * speed * (slowTime > 0 ? slowScale : 1f);
+        vec = vec.normalized * speed * (_slowTime > 0 ? slowScale : 1f);
         rb.AddForce(vec);
 
-
-        if (Input.GetKeyDown(KeyCode.Space)
-            || Input.GetMouseButtonDown(0))
+        if (isAttacking)
         {
+            isAttacking = false;
+
             if (kan != null)
             {
                 Vector2 direction = kan.transform.position - transform.position;
                 if (direction.magnitude <= attackRange)
                 {
-                    direction = direction.normalized * attackPower;
-                    kanrb.AddForce(direction, ForceMode2D.Impulse);
+                    direction = direction.normalized;
+                    direction.x *= attackHoriScale;
+                    kanrb.AddForce(direction.normalized * attackPower, ForceMode2D.Impulse);
                 }
             }
         }
 
-        if(slowTime > 0)
-        {
-            slowTime -= Time.deltaTime;
-        }
     }
 
-    public void SetSlow(float time)
+    public void SetSlow()
     {
-        slowTime = time;
+        _slowTime = slowTime;
+    }
+
+    public Rigidbody2D GetKanRigidbody2D()
+    {
+        return kanrb;
     }
 }

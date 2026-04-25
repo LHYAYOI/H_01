@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6585257079899056749}
   - component: {fileID: 9166882527057256750}
+  - component: {fileID: 7003089911476900376}
   - component: {fileID: 6132895493871903289}
   - component: {fileID: 711167710480019847}
-  - component: {fileID: 7003089911476900376}
   m_Layer: 6
   m_Name: "\u304B"
   m_TagString: Untagged
@@ -94,6 +94,19 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &7003089911476900376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7305406282366822415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e850a456404f33a4693cf2ba74e4b091, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterController
+  m_state: 0
 --- !u!50 &6132895493871903289
 Rigidbody2D:
   serializedVersion: 5
@@ -157,16 +170,3 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
---- !u!114 &7003089911476900376
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7305406282366822415}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e850a456404f33a4693cf2ba74e4b091, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CharacterController
-  m_state: 0
